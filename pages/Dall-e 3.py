@@ -20,4 +20,4 @@ st.image = open_ia_key.images.generate(
     size="512x512",
     quality="standard",
     n=1,
-)
+) 
