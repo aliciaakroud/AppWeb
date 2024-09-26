@@ -14,7 +14,7 @@ st.write(open_ia_key)
 
 client = OpenAI(api_key=open_ia_key)
 prompt=user_input,
-st.image = client.images.generate(
+st.image = client.image.create(
     model="dall-e-2",
     prompt=user_input,
     size="512x512",
