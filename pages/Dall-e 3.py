@@ -21,3 +21,4 @@ st.image = client.images.generate(
     quality="standard",
     n=1,
 ) 
+ 
