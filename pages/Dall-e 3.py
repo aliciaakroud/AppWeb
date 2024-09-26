@@ -20,5 +20,5 @@ st.image = client.image.create(
     size="512x512",
     quality="standard",
     n=1,
-) 
+)
  
