@@ -1,7 +1,7 @@
 import streamlit as st
 
 #Titre
-st.title("Application Web - Open IA")
+st.title("Dall-e 3")
 
 #Champ de saisi
 user_input = st.text_input("Veuillez entrer une description de l'image que vous souhaitez générer : ")
