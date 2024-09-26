@@ -13,9 +13,15 @@ st.write(user_input)
 #image
 st.video("https://youtu.be/kK3gGPkO9L8")
 
+with st.sidebar:
+    st.header("À propos de moi")
+    st.write("Nom: Akroud")
+    st.write("Prénom: Alicia")
+    st.write("[Mon Projet GitHub](https://github.com/aliciaakroud)")
+
 #Sidebare
-st.sidebar.image("https://cdn.dribbble.com/users/2018170/screenshots/14771091/media/8244197cd8d6a675f0fca573bfb5498f.png?compress=1&resize=400x300")
-st.sidebar.title("Alicia Akroud")
+#st.sidebar.image("https://cdn.dribbble.com/users/2018170/screenshots/14771091/media/8244197cd8d6a675f0fca573bfb5498f.png?compress=1&resize=400x300")
+#st.sidebar.title("Alicia Akroud")
 
 #Select bare
 st.selectbox("Selectionnez votre niveau d'étude", ["Bac", "Bac +2", "Bac +5"])
