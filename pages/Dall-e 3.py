@@ -11,6 +11,7 @@ st.write(user_input)
 #st.image(" ")
 
 #Sidebare
-st.sidebar.text_input("Veuillez entrer la clé Open IA")
-st.write(user_input)
+open_ia_key = st.sidebar.text_input("Veuillez entrer la clé Open IA")
+st.write(open_ia_key)
+
 
