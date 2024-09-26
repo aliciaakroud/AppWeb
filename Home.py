@@ -11,7 +11,7 @@ st.markdown(
     }
     </style>
     """
-
+)
 #Titre
 st.title("Mon formulaire")
 
