@@ -12,12 +12,12 @@ st.write(user_input)
 open_ia_key = st.sidebar.text_input("Veuillez entrer la clé Open IA")
 st.write(open_ia_key)
 
-client = OpenAI(api_key=Open_ia_key)
-prompt=user_input,
-st.image = client.images.generate(
-    model="dall-e-2",
-    prompt=user_input,
-    size="512x512",
-    quality="standard",
-    n=1,
-) 
+#client = OpenAI(api_key=Open_ia_key)
+#prompt=user_input,
+#st.image = client.images.generate(
+#    model="dall-e-2",
+#    prompt=user_input,
+ #   size="512x512",
+  #  quality="standard",
+  #  n=1,
+#) 
