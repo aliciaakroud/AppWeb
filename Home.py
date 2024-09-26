@@ -11,4 +11,7 @@ user_input = st.text_input("Tapez votre texte : ")
 st.write(user_input)
 
 #image
-st.image("https://youtu.be/kK3gGPkO9L8")
+st.video("https://youtu.be/kK3gGPkO9L8")
+
+#Sidebare
+
