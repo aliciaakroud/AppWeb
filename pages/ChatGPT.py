@@ -1,10 +1,17 @@
-import os
+import streamlit as st
 from openai import OpenAI
+#Titre
+st.title("ChatGPT Redacteur Web")
 
-client = OpenAI(api_key=OpenAIKEY)
+#Champ de saisi
+user_input = st.text_input("Choisissez une thématique ")
+st.write(user_input)
 
-prompt = input('Tapez votre text : ')
+#Sidebare
+open_ia_key = st.sidebar.text_input("Veuillez entrer la clé Open IA")
+st.write(open_ia_key)
 
+client = OpenAI(api_key=open_ia_key)
 
 chat_completion = client.chat.completions.create(
     messages=[
@@ -52,7 +59,7 @@ chat_completion = client.chat.completions.create(
         },
          {
             "role": "user",
-            "content": prompt,
+            "content": user_input,
         },
     ],
     model="gpt-3.5-turbo",
@@ -62,7 +69,6 @@ chat_completion = client.chat.completions.create(
   frequency_penalty=0.0,
   presence_penalty=0.0
 )
-
 
 # Réponse de ChapGPT
 chat_completion.choices[0].message.content
