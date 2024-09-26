@@ -14,4 +14,5 @@ st.write(user_input)
 st.video("https://youtu.be/kK3gGPkO9L8")
 
 #Sidebare
+st.sidebar.title("Alicia Akroud")
 
