@@ -1,17 +1,5 @@
 import streamlit as st
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url("https://th.bing.com/th/id/R.02640ef2c934c3b45e4baabf14a4c4af?rik=%2b0PtUA%2fdQqk4wQ&riu=http%3a%2f%2fimages2.alphacoders.com%2f757%2f75742.jpg&ehk=5uWoKcBSdphc223yZ4VZ10oIPH%2bioQh741B2rkiiUgU%3d&risl=&pid=ImgRaw&r=0");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
-    """
-)
 #Titre
 st.title("Mon formulaire")
 
@@ -34,3 +22,7 @@ st.selectbox("Selectionnez votre niveau d'étude", ["Bac", "Bac +2", "Bac +5"])
 
 #Select slider
 age = st.select_slider("Quel est votre age ?", range(10,99))
+if age < 18 : 
+    st.write("Vous etes mineur")
+else: 
+    st.write("Vous etes majeur")
