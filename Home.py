@@ -29,13 +29,6 @@ else:
 st.sidebar.title("Alicia Akroud")
 st.sidebar.image("https://cdn.dribbble.com/users/2018170/screenshots/14771091/media/8244197cd8d6a675f0fca573bfb5498f.png?compress=1&resize=400x300")
 
-# Configuration de la page
-st.set_page_config(
-    page_title="Formulaire",
-    page_icon="📝",
-    layout="wide"
-)
-
 #Mise en page
 st.markdown(
     """
