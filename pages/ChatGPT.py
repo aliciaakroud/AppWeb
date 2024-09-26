@@ -5,11 +5,9 @@ st.title("ChatGPT Redacteur Web")
 
 #Champ de saisi
 user_input = st.text_input("Choisissez une thématique ")
-st.write(user_input)
 
 #Sidebare
 open_ia_key = st.sidebar.text_input("Veuillez entrer la clé Open IA")
-st.write(open_ia_key)
 
 client = OpenAI(api_key=open_ia_key)
 
